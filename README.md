@@ -91,7 +91,10 @@ To quote fictional detective Sherlock Holmes:
 > "When you have eliminated all that is impossible, then whatever remains,
 however improbable, must be the truth."
 
-Is it possible to apply Sherlock's style of deductive reasoning to this problem? How can we leverage the Bulls and Cows hints to "eliminate all that is impossible"?
+Is it possible to apply Sherlock's style of deductive reasoning to this problem?
 
-How can a computer (which is better at tedious tasks than it is at analytical reasoning and intuition) to help us apply this wisdom?
+* How can a computer (which is better at tedious tasks than it is at analytical reasoning and intuition) help us apply this wisdom?
 
+* How can we leverage the Bulls and Cows hints to "eliminate all that is impossible"?
+
+* In addition to the above, could we further analyze our options to determine which "non-impossible" guesses would get us more information, sooner?
