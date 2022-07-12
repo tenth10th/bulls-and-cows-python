@@ -20,7 +20,7 @@ class Player:
             padded_guess = guess.rjust(4, "0")
             add_guess = True
             for i in range(0, 3):
-                if padded_guess[i] in padded_guess[i+1:]:            
+                if padded_guess[i] in padded_guess[i+1:]:
                     add_guess = False
             if add_guess:
                 self.guesses.append(padded_guess)
@@ -28,7 +28,7 @@ class Player:
     def guess(self):
         if self.combination_mode:
             return self.combinations.pop()
-        
+
         return self.guesses.pop()
 
     def get_feedback(self, guess, bulls, cows):
@@ -48,6 +48,7 @@ class Player:
                     good_guesses.append(guess)
             self.guesses = good_guesses
             self.combination_mode = False
+
         if bulls + cows == 4 and len(self.guesses) > 24:
             # We have the right numbers! But not in the right spots?
             good_digits = list(guess)
