@@ -3,6 +3,7 @@ import pytest
 
 REPEATEDLY = 100
 
+
 @pytest.mark.parametrize("guess, code, expected_bulls, expected_cows", [
     ("1234", "1234", 4, 0),
     ("1234", "4321", 0, 4),
@@ -14,6 +15,7 @@ REPEATEDLY = 100
 ])
 def test_score_code(guess, code, expected_bulls, expected_cows):
     assert score_code(guess, code) == (expected_bulls, expected_cows)
+
 
 def test_generate_code():
     for i in range(0, REPEATEDLY):
